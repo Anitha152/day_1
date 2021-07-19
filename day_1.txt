@@ -1,0 +1,68 @@
+DAY_1 COOPER TRAINING
+-------------------------------------------------------------
+1)To Lower Case 1
+Poblem statemnt:Given a string s, return the string after replacing every uppercase letter with the same lowercase letter.
+Output Format
+sample input 0
+hello
+
+Sample output 0
+
+Hello
+Sample Input 1
+
+here
+Sample Output 1
+
+here
+code:
+
+input_str=input()
+print(input_str.lower())
+----------------------------------------------------------------
+2)Detect Capital
+We define the usage of capitals in a word to be right when one of the following cases holds:
+All letters in this word are capitals, like "USA". All letters in this word are not capitals, like "leetcode". Only the first letter in this word is capital, like "Google". Given a string word, return true if the usage of capitals in it is right.
+
+Input Format
+
+USA ,Output Format:   true
+
+Sample Input 0
+
+FlaG
+Sample Output 0
+
+false
+code:
+input_str=input()
+if(input_str==input_str.upper()) or (input_str==input_str.lower()) or (input_str==input_str.capitalize()):
+    print("true")
+else:
+    print("false")
+--------------------------------------------------------------------
+3)Number of Segments in a String
+You are given a string s, return the number of segments in the string.
+
+A segment is defined to be a contiguous sequence of non-space characters.
+
+Input Format
+
+Hello, my name is John
+Sample Output 0
+
+5
+Explanation 0
+
+The five segments are ["Hello,", "my", "name", "is", "John"]
+
+Sample Input 1
+
+love live! mu'sic forever
+Sample Output 1
+
+4
+code:
+input_str=input()
+new_string=input_str.split()
+print(len(new_string))
